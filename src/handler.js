@@ -1,11 +1,11 @@
-const { nanoid } = require('nanoid');
+const nanoid = require('nanoid');
 const notes = require('./notes');
 
 const getNoteHandler = () => ({
   status: 'success',
   data: notes,
 });
-
+  
 const getNoteByIdHandler = (request, h) => {
   const { id } = request.params;
   const note = notes.filter((n) => n.id === id)[0];

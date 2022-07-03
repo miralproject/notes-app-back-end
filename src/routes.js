@@ -15,17 +15,17 @@ const routes = [
   {
     method: 'GET',
     path: '/notes',
-    handler: () => getNoteHandler,
+    handler: getNoteHandler,
   },
   {
     method: 'POST',
     path: '/notes',
-    handler: () => addNoteHandler,
+    handler: addNoteHandler,
   },
   {
     method: 'GET',
     path: '/notes/{id}',
-    handler: () => getNoteByIdHandler,
+    handler: getNoteByIdHandler,
   },
   {
     method: 'PUT',
@@ -35,9 +35,8 @@ const routes = [
   {
     method: 'DELETE',
     path: '/notes/{id}',
-    handler: () => deleteNoteByIdHandler,
+    handler: deleteNoteByIdHandler,
   },
 ];
-
 
 module.exports = routes;
