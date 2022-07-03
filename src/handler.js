@@ -3,9 +3,7 @@ const notes = require('./notes');
 
 const getNoteHandler = () => ({
   status: 'success',
-  data: {
-    notes,
-  },
+  data: notes,
 });
 
 const getNoteByIdHandler = (request, h) => {

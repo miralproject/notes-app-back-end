@@ -9,6 +9,11 @@ const {
 const routes = [
   {
     method: 'GET',
+    path: '/',
+    handler: () => 'Welcome to note apps',
+  },
+  {
+    method: 'GET',
     path: '/notes',
     handler: () => getNoteHandler,
   },
